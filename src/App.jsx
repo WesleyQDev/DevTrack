@@ -1,31 +1,16 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
-export default function App() {
-  const [user, setUser] = useState({});
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    axios
-      .get("https://api.github.com/users/WesleyQDev")
-      .then((response) => {
-        setUser(response.data)
-        setLoading(false)
-      })
-      .catch((error) => console.log(error))
-      .finally(console.log("Request completed"))
-  },[])
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Header } from "./components/Header";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-  console.log(user, "user");
-  return (
-    <div>
-      {
-        loading ?  (<h1>Carregando informações...</h1>) :(
-          <>
-            <input name="myInput" />
-            <p>{user.login}</p>
-            <img src={user.avatar_url} />
-          </>
-      )
-      }
-    </div>
-  );
+
+export default function App(){
+  return(
+   <BrowserRouter>
+   <Header />
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
+   </BrowserRouter> 
+  )
 }

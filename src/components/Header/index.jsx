@@ -7,12 +7,12 @@ export function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="/">Engenharia de Software</Navbar.Brand>
+        <Navbar.Brand href="/">DevTrack</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <NavDropdown title="Criar" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#usuario">Usuario</NavDropdown.Item>
+              <NavDropdown.Item href="/register">Usuario</NavDropdown.Item>
               <NavDropdown.Item href="#organização">
                 Organização
               </NavDropdown.Item>
@@ -21,7 +21,7 @@ export function Header() {
                 Novo projeto
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#cadastros">Cadastros</Nav.Link>
+            <Nav.Link href="/users">Usuarios</Nav.Link>
           </Nav>
           <Nav>
           <Nav.Link href="https://github.com/Software-Engineering-Stack/" rel="noopener noreferrer" target="_blank">GitHub</Nav.Link>

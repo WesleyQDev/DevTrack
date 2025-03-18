@@ -7,12 +7,12 @@ export function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="/">Engenharia de Software</Navbar.Brand>
+        <Navbar.Brand href="/">DevTrack</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <NavDropdown title="Criar" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#usuario">Usuario</NavDropdown.Item>
+              <NavDropdown.Item href="/register">Usuario</NavDropdown.Item>
               <NavDropdown.Item href="#organização">
                 Organização
               </NavDropdown.Item>

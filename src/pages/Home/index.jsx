@@ -6,20 +6,19 @@ export function Home(){
     <div className='main '>
         <div className=" ">
             <div className='  justify-content-center banner'>
-                <h1 className='fs-1'>Projeto Engenharia de Software</h1>
+                <h1 className='fs-1'>DevTrack</h1>
                 <p className='fs-4'>
-                Desenvolva com sua equipe o seu projeto e compartilhe o seu trabalho com o publico! 🧑‍💻
+                DevTrack – Colabore com sua equipe, desenvolva seu projeto com eficiência e compartilhe suas conquistas com o público!💻
                 </p>
             </div>
             <div className='nsection'>
-                <Card>
-                    <Card.Header>Hello World!</Card.Header>
+                <Card className='pr-10'>
                     <Card.Body>
-                    <Card.Title>Crie uma conta</Card.Title>
+                    <Card.Title>Primeiro passo</Card.Title>
                     <Card.Text>
-                        Criar uma conta de usuario é o primeiro passo para manter registrado os projetos e a equipe ao qual você se encontra.
+                    Registre sua conta no DevTrack e comece a desenvolver seus projetos em equipe. Conecte-se com outros profissionais, organize suas tarefas e compartilhe seu trabalho com o público.
                     </Card.Text>
-                    <Button variant="primary">Criar</Button>
+                    <Button href="/register" variant="success">Registrar</Button>
                     </Card.Body>
                 </Card>
             </div>

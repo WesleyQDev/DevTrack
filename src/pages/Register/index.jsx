@@ -6,13 +6,13 @@ export function Register(){
     const navigate = useNavigate();
 
     const handleCreatePost = (data) => {
-      api.post('/posts', data)
+      api.post('/users', data)
       navigate('/')
       // reset();
     }
     return(
     <div className="px-14 py-5">
-        <UserForm title="Criar publicação" textButton="Criar" onAction={handleCreatePost}/>
+        <UserForm onAction={handleCreatePost}/>
     </div>
     )
 }

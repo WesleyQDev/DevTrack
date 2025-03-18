@@ -1,0 +1,8 @@
+.onePostContainer {
+    margin: 10vh 10vw;
+    height: 90vh;
+}
+
+.onePostContainer p {
+    margin-top: 1rem;
+}

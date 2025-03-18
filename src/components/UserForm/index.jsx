@@ -11,10 +11,9 @@ const postSchema = yup.object({
   name: yup.string().required("*Digite um nome de usuario"),
   email: yup.string().required("*É necesario um e-mail valido"),
   age: yup.number().required("É necesario preencher o campo de conteúdo"),
-  pass: yup.string().required("É necesario preencher o campo de conteúdo"),
 });
 
-export function UserForm( onAction) {
+export function UserForm({ onAction }) {
   const { id } = useParams();
 
   const {
@@ -27,13 +26,16 @@ export function UserForm( onAction) {
   });
 
   async function getDataUpdate() {
-    const response = await api.get(`/posts/${id}`);
+    const response = await api.get(`/users/${id}`);
     reset(response.data);
   }
 
   useEffect(() => {
-    getDataUpdate();
-  }, []);
+    // Só chame getDataUpdate se houver um ID
+    if (id) {
+      getDataUpdate();
+    }
+  }, [id]);
 
   return (
     <Form onSubmit={handleSubmit(onAction)}>
@@ -51,11 +53,6 @@ export function UserForm( onAction) {
         <Form.Label>E-mail</Form.Label>
         <Form.Control type="email" placeholder="Enter email" {...register("email")}/>
         <Form.Text className="text-muted">{errors.email?.message}</Form.Text>
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Senha</Form.Label>
-        <Form.Control type="password" placeholder="Password" {...register("pass")}/>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Concordo com os termos" />

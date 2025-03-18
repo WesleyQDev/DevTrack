@@ -12,8 +12,8 @@ export function UserCard({ name, age, email, id }) {
         <Card.Title>{name}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{email}</Card.Subtitle>
         <Card.Text>{age} Anos</Card.Text>
-        <Button className="button" variant="primary" onClick={() => navigate(`/post/${id}`)}>Ver mais</Button>
-        <Button variant="secondary" onClick={() => navigate(`/updatePost/${id}`)}>Atualizar</Button>
+        <Button className="button" variant="primary" onClick={() => navigate(`/user/${id}`)}>Ver mais</Button>
+        <Button variant="secondary" onClick={() => navigate(`/updateUser/${id}`)}>Atualizar</Button>
         <Button variant="link"><MdDelete onClick={() => onDeletePost(id)} size={28} color="#ed4337" /></Button>
       </Card.Body>
     </Card>

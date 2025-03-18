@@ -21,7 +21,7 @@ export function Header() {
                 Novo projeto
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#cadastros">Cadastros</Nav.Link>
+            <Nav.Link href="/users">Usuarios</Nav.Link>
           </Nav>
           <Nav>
           <Nav.Link href="https://github.com/Software-Engineering-Stack/" rel="noopener noreferrer" target="_blank">GitHub</Nav.Link>

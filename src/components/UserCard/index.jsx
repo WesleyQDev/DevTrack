@@ -3,7 +3,7 @@ import "./styles.css";
 import { MdDelete } from "react-icons/md";
 import { Card, Button} from "react-bootstrap";
 
-export function UserCard({ name, age, email, id }) {
+export function UserCard({ name, creationTimestamp , email, id }) {
   const navigate = useNavigate();
 
   return (
@@ -11,7 +11,7 @@ export function UserCard({ name, age, email, id }) {
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{email}</Card.Subtitle>
-        <Card.Text>{age} Anos</Card.Text>
+        <Card.Text>Criado em: {creationTimestamp}</Card.Text>
         <Button className="button" variant="primary" onClick={() => navigate(`/user/${id}`)}>Ver mais</Button>
         <Button variant="secondary" onClick={() => navigate(`/updateUser/${id}`)}>Atualizar</Button>
         <Button variant="link"><MdDelete onClick={() => onDeletePost(id)} size={28} color="#ed4337" /></Button>

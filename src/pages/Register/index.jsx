@@ -6,7 +6,7 @@ export function Register(){
     const navigate = useNavigate();
 
     const handleCreatePost = (data) => {
-      api.post('/users', data)
+      api.post('/users/create', data)
       navigate('/')
       // reset();
     }

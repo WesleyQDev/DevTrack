@@ -8,9 +8,10 @@ export function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    api.get('/users')
+    api.get('/users/all')
     .then((response) => {
       setUsers(response.data)
+      console.log(response.data)
     })
     .catch((error) => {
       console.error('Error fetching users:', error);
@@ -26,7 +27,7 @@ function handleDeletePost(id){
     <div className="feedContainer">
       {users.map((user) => (
         <div key={user.id}>
-          <UserCard name= {user.name} age={user.age} email={user.email} id={user.id} onDeletePost={handleDeletePost}/>
+          <UserCard id={user.id} name= {user.username} email={user.email} creationTimestamp={user.creationTimestamp}  onDeletePost={handleDeletePost}/>
         </div>
       ))}
     </div>

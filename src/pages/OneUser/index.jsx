@@ -18,9 +18,9 @@ export function OneUser() {
 
   return (
     <article className="onePostContainer">
-      <h2>{user.name}</h2>
+      <h2>{user.username}</h2>
       <p>
-        Email: {user.email}, idade: {user.age}, sobre: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quidem nisi deserunt aspernatur cupiditate saepe. Ipsam architecto iure quia eos tenetur sequi dignissimos? Incidunt, esse assumenda expedita consequuntur deleniti maiores?
+        Email: {user.email}
       </p>
     </article>
   );

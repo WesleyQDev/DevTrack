@@ -1,0 +1,158 @@
+// 20250319182231
+// https://bb94-2804-d41-e06e-ea00-656e-9efb-db28-d3e7.ngrok-free.app/users/all
+
+[
+  {
+    "id": "2823d2c7-1220-4267-99f7-addcde76b882",
+    "username": "gabriel",
+    "email": "gabrielS@gmail.com",
+    "password": "12344321",
+    "creationTimestamp": "2025-03-18T15:17:39.671659Z",
+    "updateTimestamp": "2025-03-18T15:17:39.671659Z",
+    "version": 0
+  },
+  {
+    "id": "2b315959-b40e-4dca-a98c-c671fc683430",
+    "username": "Clebe",
+    "email": "Cleber@example.com",
+    "password": "batatatatata",
+    "creationTimestamp": "2025-03-18T21:54:49.089483Z",
+    "updateTimestamp": "2025-03-18T21:54:49.089483Z",
+    "version": 0
+  },
+  {
+    "id": "35efe00c-9e48-44b7-b4c6-d77ce9c4f44a",
+    "username": "Marcio",
+    "email": "Racao@example.com",
+    "password": "paodeshowdaxuxa",
+    "creationTimestamp": "2025-03-18T22:20:46.859601Z",
+    "updateTimestamp": "2025-03-18T22:20:46.859601Z",
+    "version": 0
+  },
+  {
+    "id": "3ff63c98-dd69-401e-a465-8777db0175f2",
+    "username": "john_doe",
+    "email": "john@example.com",
+    "password": "senhasegura123",
+    "creationTimestamp": "2025-03-18T21:48:53.989106Z",
+    "updateTimestamp": "2025-03-18T21:48:53.989106Z",
+    "version": 0
+  },
+  {
+    "id": "4b5ffefa-6f0d-4aa4-b9fd-95cd24473a85",
+    "username": "john_doe",
+    "email": "john@example.com",
+    "password": "senhasegura123",
+    "creationTimestamp": "2025-03-18T21:49:08.969980Z",
+    "updateTimestamp": "2025-03-18T21:49:08.969980Z",
+    "version": 0
+  },
+  {
+    "id": "59ed40dd-3735-4b14-bab9-625cbcaa777e",
+    "username": "gabriel",
+    "email": "gabrielS@gmaial.com",
+    "password": "12344321",
+    "creationTimestamp": "2025-03-18T15:19:55.154418Z",
+    "updateTimestamp": "2025-03-18T15:19:55.154418Z",
+    "version": 0
+  },
+  {
+    "id": "619a7025-8ab9-49f2-b89c-cf01d55e2f9a",
+    "username": "Clebe",
+    "email": "Cleber@example.com",
+    "password": "batatatatata",
+    "creationTimestamp": "2025-03-18T21:52:09.439689Z",
+    "updateTimestamp": "2025-03-18T21:52:09.440689Z",
+    "version": 0
+  },
+  {
+    "id": "71b654df-7419-40b9-8ef3-c2c970df33ce",
+    "username": "john_doe",
+    "email": "john@example.com",
+    "password": "senhasegura123",
+    "creationTimestamp": "2025-03-18T21:47:44.023507Z",
+    "updateTimestamp": "2025-03-18T21:47:44.023507Z",
+    "version": 0
+  },
+  {
+    "id": "74a6d5ca-9ae8-46aa-959f-35c749aa1283",
+    "username": "viniciusjunior",
+    "email": "baguga@example.com",
+    "password": "testeaaa",
+    "creationTimestamp": "2025-03-19T20:16:53.781322Z",
+    "updateTimestamp": "2025-03-19T20:16:53.781322Z",
+    "version": 0
+  },
+  {
+    "id": "7aec1e78-9279-4535-a57d-276e5dcf6391",
+    "username": "john_doe",
+    "email": "john@example.com",
+    "password": "senhasegura123",
+    "creationTimestamp": "2025-03-18T21:49:00.439963Z",
+    "updateTimestamp": "2025-03-18T21:49:00.439963Z",
+    "version": 0
+  },
+  {
+    "id": "905514a9-d1c9-4faa-b080-bd48fc1015b9",
+    "username": "MarcioJunior",
+    "email": "aloaloalo@example.com",
+    "password": "TESTEfinal",
+    "creationTimestamp": "2025-03-18T23:11:34.326053Z",
+    "updateTimestamp": "2025-03-18T23:11:34.326053Z",
+    "version": 0
+  },
+  {
+    "id": "9cd6aacd-7f92-4e73-afa2-5d50c9a1f039",
+    "username": "MarcioJunior",
+    "email": "aloaloalo@example.com",
+    "password": "TESTEfinal",
+    "creationTimestamp": "2025-03-19T20:15:32.544822Z",
+    "updateTimestamp": "2025-03-19T20:15:32.544822Z",
+    "version": 0
+  },
+  {
+    "id": "aebd7708-c3bd-48a8-98c6-f02b392d2b76",
+    "username": "gabriel",
+    "email": "gabrielS@gmaial.com",
+    "password": "1234ad4321",
+    "creationTimestamp": "2025-03-18T21:09:25.892175Z",
+    "updateTimestamp": "2025-03-18T21:09:25.892175Z",
+    "version": null
+  },
+  {
+    "id": "d645def5-0198-405a-a4f9-bc6c2fd05821",
+    "username": "Clebe",
+    "email": "Cleber@example.com",
+    "password": "batatatatata",
+    "creationTimestamp": "2025-03-18T22:19:51.615180Z",
+    "updateTimestamp": "2025-03-18T22:19:51.615180Z",
+    "version": 0
+  },
+  {
+    "id": "d8207682-71af-4f95-bc54-be71ac501ae0",
+    "username": "gabriel",
+    "email": "gabrielS@gmaial.com",
+    "password": "12344321",
+    "creationTimestamp": "2025-03-18T15:17:58.519379Z",
+    "updateTimestamp": "2025-03-18T15:17:58.519379Z",
+    "version": 0
+  },
+  {
+    "id": "e2f47658-e255-4546-b6cf-2d0220f041f7",
+    "username": "Rogerio",
+    "email": "Rogerr@example.com",
+    "password": "paodebatatara",
+    "creationTimestamp": "2025-03-18T22:20:17.526405Z",
+    "updateTimestamp": "2025-03-18T22:20:17.526405Z",
+    "version": 0
+  },
+  {
+    "id": "edab8070-f518-4d3c-9a7e-f63a701bb727",
+    "username": "gabriel",
+    "email": "gabrielS@gmaial.com",
+    "password": "1234ad4321",
+    "creationTimestamp": "2025-03-18T21:10:38.741876Z",
+    "updateTimestamp": "2025-03-18T21:10:38.741876Z",
+    "version": 0
+  }
+]

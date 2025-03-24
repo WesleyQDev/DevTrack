@@ -1,0 +1,12 @@
+.nsection{
+    margin-top: 2rem;
+}
+.main{
+    margin: 1rem;
+}
+
+@media (min-width: 600px) {
+    .main{
+        margin: 5rem;
+    }
+}

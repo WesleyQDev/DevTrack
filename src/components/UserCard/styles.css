@@ -1,0 +1,59 @@
+article + article {
+    margin-top: 2rem;
+  }
+  
+  .button{
+    margin-right: 5px;
+  }
+
+  .cardContainer {
+    margin-block: 0.1rem;
+    width: 75vw; /* Largura fixa ao invés de max-width */
+    min-height: 200px; /* Altura mínima para uniformidade */
+    padding: 1rem;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* Para garantir que padding não afete o tamanho */
+  }
+  
+  .cardContainer header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .cardContainer p {
+    margin-top: 1rem;
+    flex-grow: 1; /* Permite que o parágrafo cresça e ocupe o espaço disponível */
+    overflow: auto; /* Adiciona rolagem quando o conteúdo for muito extenso */
+    max-height: 300px; /* Limita a altura máxima do texto */
+  }
+  
+  .cardContainer .buttonsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  .tag {
+    background-color: #424242;
+    padding: 0.2rem 0.5rem;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-right: 0.25rem;
+    display: inline-block; /* Garante comportamento consistente */
+  }
+  
+  .date {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+  }
+  
+  .author {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+  }
+  

@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "id": "e2f47658-e255-4546-b6cf-2d0220f041f7",
+      "username": "Rogerio",
+      "email": "Rogerr@example.com",
+      "password": "paodebatatara",
+      "creationTimestamp": "2025-03-18T22:20:17.526405Z",
+      "updateTimestamp": "2025-03-18T22:20:17.526405Z",
+      "version": 0
+    }
+  ]
+}

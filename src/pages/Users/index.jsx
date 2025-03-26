@@ -8,7 +8,7 @@ export function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    api.get('/users/all')
+    api.get('/users')
     .then((response) => {
       setUsers(response.data)
       console.log(response.data)

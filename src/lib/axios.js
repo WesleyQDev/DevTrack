@@ -1,8 +1,9 @@
 import axios from "axios";
+import { API_URL } from "../config";
 
 export const api = axios.create({
   baseURL:
-    "https://bb94-2804-d41-e06e-ea00-656e-9efb-db28-d3e7.ngrok-free.app",
+    API_URL,
     headers: {
         "ngrok-skip-browser-warning": "true"
       }

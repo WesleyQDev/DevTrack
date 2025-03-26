@@ -3,7 +3,7 @@ import "./styles.css";
 import { MdDelete } from "react-icons/md";
 import { Card, Button} from "react-bootstrap";
 
-export function UserCard({ name, creationTimestamp , email, id }) {
+export function UserCard({ name, creationTimestamp , email, id, onDeletePost}) {
   const navigate = useNavigate();
 
   return (

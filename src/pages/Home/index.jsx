@@ -1,8 +1,29 @@
 import Card from "react-bootstrap/Card";
 import "./Home.css";
+import { useState, useEffect } from 'react';
 import Button from "react-bootstrap/Button";
 import { API_URL } from "../../config";
+import { api } from '../../lib/axios';
+import { UserCard } from '../../components/UserCard';
+
 export function Home() {
+    const [users, setUsers] = useState([]);
+  
+    useEffect(() => {
+      api.get('/users')
+      .then((response) => {
+        setUsers(response.data)
+        console.log(response.data)
+      })
+      .catch((error) => {
+        console.error('Error fetching users:', error);
+      });
+    }, []);
+  
+  function handleDeletePost(id){
+    setUsers(users.filter(user => user.id !== id))
+    api.delete(`/users/${id}`)
+  }
   return (
     <div className="main ">
       <div className=" ">
@@ -29,6 +50,15 @@ export function Home() {
           </Card>
         </div>
       </div>
+      
+          <div className="feedContainer">
+          <h2>Usuarios registrados:</h2>
+            {users.map((user) => (
+              <div key={user.id}>
+                <UserCard id={user.id} name= {user.username} email={user.email} creationTimestamp={user.creationTimestamp}  onDeletePost={handleDeletePost}/>
+              </div>
+            ))}
+          </div>
     </div>
   );
 }

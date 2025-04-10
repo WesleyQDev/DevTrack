@@ -8,7 +8,7 @@ article + article {
 
   .cardContainer {
     margin-block: 0.1rem;
-    width: 75vw; /* Largura fixa ao invés de max-width */
+    width: 87vw; /* Largura fixa ao invés de max-width */
     min-height: 200px; /* Altura mínima para uniformidade */
     padding: 1rem;
     border-radius: 2px;

@@ -13,7 +13,7 @@ const postSchema = yup.object({
   password: yup.string().required("*É necesario uma senha valida"),
 });
 
-export function UserForm({ onAction }) {
+export function UserForm({ title, textButton, onAction }) {
   const { id } = useParams();
 
   const {
@@ -39,6 +39,7 @@ export function UserForm({ onAction }) {
 
   return (
     <Form onSubmit={handleSubmit(onAction)}>
+      <h2>{title}</h2>
       <Form.Group className="mb-3" controlId="formBasicName">
         <Form.Label>Nome</Form.Label>
         <Form.Control
@@ -71,7 +72,7 @@ export function UserForm({ onAction }) {
       </Form.Group>
 
       <Button variant="primary" type="submit">
-        Registrar
+        {textButton}
       </Button>
     </Form>
   );

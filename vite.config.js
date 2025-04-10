@@ -11,7 +11,7 @@ export default defineConfig({
   server: {
     // Permite o acesso ao servidor de desenvolvimento via ngrok
     allowedHosts: [
-      "5e12-191-221-227-236.ngrok-free.app",
+      "652a-191-221-227-236.ngrok-free.app",
       // Você também pode usar um wildcard para permitir todos os subdomínios do ngrok
       // '*.ngrok-free.app',
     ],

@@ -4,7 +4,7 @@ import { api } from "../../lib/axios";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 
-export function OneUser() {
+export function Profile() {
 
   const [user, setUser] = useState ({})
 

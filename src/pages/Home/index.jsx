@@ -8,6 +8,7 @@ import { UserCard } from "../../components/UserCard";
 
 import { useAuth } from "../../provider/authProvider";
 import { Col, Row } from "react-bootstrap";
+import { Amigo } from "../../components/Amigo";
 export function Home() {
   const [users, setUsers] = useState([]);
 
@@ -36,20 +37,24 @@ export function Home() {
       <div className="main ">
         <div className=" ">
           <div className="  justify-content-center banner">
-            <h1 className="fs-1">Olá User</h1>
+            <h1 className="fs-1">Olá {user}</h1>
             <p className="fs-4">Pronto para usar o DevTrack?</p>
           </div>
           <Row xs={1} md={2} className="g-4">
             {Array.from({ length: 4 }).map((_, idx) => (
               <Col key={idx}>
                 <Card>
-                  <Card.Img variant="top" src="holder.js/100px160" />
+                  <Card.Img
+                    variant="top"
+                    src="https://th.bing.com/th/id/OIP.nGRxZXh2mMH-0UhNfjNPYAHaEH?rs=1&pid=ImgDetMain"
+                  />
                   <Card.Body>
-                    <Card.Title>Card title</Card.Title>
+                    <Card.Title>Projeto de exemplo</Card.Title>
                     <Card.Text>
-                      This is a longer card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      Projeto de um software de edição de vídeo usando Python —
+                      sim, Python! A ideia é facilitar a edição de vídeo e
+                      permitir que programadores desenvolvam seus próprios
+                      plugins de forma simples para o software.
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -58,19 +63,37 @@ export function Home() {
           </Row>
         </div>
 
-        <div className="feedContainer">
-          <h2>Amigos:</h2>
-          {users.map((user) => (
-            <div key={user.id}>
-              <UserCard
-                id={user.id}
-                name={user.username}
-                email={user.email}
-                creationTimestamp={user.creationTimestamp}
-                onDeletePost={handleDeletePost}
-              />
-            </div>
-          ))}
+        <div className="feedContaine mt-5">
+          <h2>Amigos</h2>
+          <Row xs={2} md={5} className="g-4">
+            {users.map((user) => (
+              <div key={user.id}>
+                <Amigo
+                  id={user.id}
+                  name={user.username}
+                  email={user.email}
+                  creationTimestamp={user.creationTimestamp}
+                  onDeletePost={handleDeletePost}
+                />
+              </div>
+            ))}
+          </Row>
+        </div>
+        <div className="feedContaine mt-5">
+          <h2>Equipes/Organizações</h2>
+          <Row xs={2} md={5} className="g-4">
+            {users.map((user) => (
+              <div key={user.id}>
+                <Amigo
+                  id={user.id}
+                  name={user.username}
+                  email={user.email}
+                  creationTimestamp={user.creationTimestamp}
+                  onDeletePost={handleDeletePost}
+                />
+              </div>
+            ))}
+          </Row>
         </div>
       </div>
     );
@@ -96,8 +119,11 @@ export function Home() {
                     organize suas tarefas e compartilhe seu trabalho com o
                     público.
                   </Card.Text>
-                  <Button href="/singup" variant="success">
+                  <Button href="/singup" variant="primary">
                     Registrar
+                  </Button>
+                  <Button href="/login" variant="secondary" className="ml-2">
+                    Já tenho conta
                   </Button>
                 </Card.Body>
               </Card>

@@ -7,7 +7,11 @@ export function Footer() {
         <Row>
           <Col md={4} className="mb-3 mb-md-0">
             <h5>Sobre nos</h5>
-            <p className="text-muted">DevTrack</p>
+            <p className="text-muted">
+              DevTrack é um projeto criado para entender o que é necessário em
+              um desenvolvimento de software, desde o planejamento até o deploy
+              e o gerenciamento do servidor.
+            </p>
           </Col>
           <Col md={4} className="mb-3 mb-md-0">
             <h5>Links</h5>
@@ -35,12 +39,18 @@ export function Footer() {
             </ul>
           </Col>
           <Col md={4}>
-            <h5>Contact</h5>
+            <h5>Contato</h5>
             <ul className="list-unstyled">
               <li className="text-muted">
                 <i className="bi bi-envelope"></i>
-                <a href="https://github.com/Software-Engineering-Stack">
-                  Github
+                <a href="https://github.com/WesleyQDev">
+                  WesleyQDev (Front End){" "}
+                </a>
+              </li>
+              <li className="text-muted">
+                <i className="bi bi-envelope"></i>
+                <a href="https://github.com/Gabe-M">
+                  Gabe-M (Back End / Operação)
                 </a>
               </li>
             </ul>

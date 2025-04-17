@@ -9,8 +9,8 @@ export function Header() {
   let user = token;
 
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-      <Container>
+    <Navbar collapseOnSelect bg="dark" fixed="top" expand="lg" className="w-100">
+      <Container >
         <Navbar.Brand href="/">DevTrack</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
